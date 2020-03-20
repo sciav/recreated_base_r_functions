@@ -57,7 +57,7 @@ my_pmin <- function(..., na.rm = FALSE) {
                        rep(list(...)[[i]], (big_length / lengths)[i])
                      })
   par_min <- apply(as.data.frame(new_args), 1, min, na.rm = ifelse(na.rm == TRUE, TRUE, FALSE))
-  par_min[(1:length(par_min)) <= max(lengths)]  
+  par_min[(1:length(par_min)) <= max(lengths)]  # keep only as many as longest
 }
 
 my_pmax <- function(..., na.rm = FALSE) {
