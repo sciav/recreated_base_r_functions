@@ -1,3 +1,5 @@
+# For assignment in Stats 14 at UC San Jose with Prof Elmstedt.
+
 # Write a function called my_min() that computes the minimum of a numeric vector without the min() function.
 # Include a logical argument called na.rm that specifies whether to remove NAs.
 my_min <- function(x, na.rm = FALSE) {
